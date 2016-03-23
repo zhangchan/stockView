@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>stock</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/stockui.css" rel="stylesheet">
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-table.js"></script>
+	<!--<script src="js/base.js"></script>-->
+    <script src="js/ui.js"></script>
+    <script src="js/stockui.js"></script>
+    <script src="js/action.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 header">
+           <a class="brand" href="javascript:;"> chan' App</a>
+        </div>
+        <!--siderbar-->
+        <div class="col-xs-2 col-md-2 siderbar">
+            <ul class="nav">
+                <li class="active">
+                    <span class="glow"></span>
+                    <a class="accordion-toggle collapsed " data-toggle="collapse" href="#lichild">myApp</a>
+                    <ul id="lichild" class="collapse ">
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <span class="glow"></span>
+                    <a class="" href="stock.html">stock</a>
+                </li>
+            </ul>
+        </div>
+        <!--main-->
+        <div class="col-xs-10 col-xs-offset-2 col-md-10 col-md-offset-2 main">
+            <div class="row-fluid">
+                <div class="area-top clearfix">
+                    <div class="pull-left head">
+                        <h3 class="title">
+                            <!--<i class="icon-dashboard"></i>-->
+                            stock view
+                        </h3>
+                        <h5>
+                            For view stock
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 area-body">
+                    <div class="well">
+                        <ul class="nav nav-pills">
+                            <li><input type="text" class="form-control pull-left" id="stocks" val="" placeholder="请输入股票代码或名称！"></li>
+                            <li><button class="btn btn-default" id="add">添加</button></li>
+                            <span class="alert alert-danger">请输入正确的股票代码！</span>
+                        </ul>
+                    </div>
+                    <div class="listbox">
+
+                    </div>
+                    <table id="table" data-id-field="id">
+                        <thead>
+                        <tr>
+                            <!-- <th data-field="state" data-checkbox="true" ></th> -->
+                            <!-- <th data-field="id" data-switchable="false" data-sortable="true">全选</th> -->
+                            <th data-field="name" >名称</th>
+                            <th data-field="price" data-visible="true" data-sortable="true" data-sorter="priceSorter">价格</th>
+                            <th data-field="closePrice"  data-sortable="true" data-sorter="priceSorter">昨收</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

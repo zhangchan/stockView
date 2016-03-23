@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-table.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-table.js"></script>
+	<!--<script src="js/base.js"></script>-->
+    <script src="js/ui.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-md-12 header">
+           <a class="brand" href="javascript:;"> chan' App</a>
+        </div>
+        <!--siderbar-->
+        <div class="col-xs-2 col-md-2 siderbar">
+            <ul class="nav">
+                <li class="active">
+                    <span class="glow"></span>
+                    <a class="accordion-toggle collapsed " data-toggle="collapse" href="#lichild">myApp</a>
+                    <ul id="lichild" class="collapse ">
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="">
+                                <i class="icon-hand-up"></i> Stock
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="">
+                    <span class="glow"></span>
+                    <a class="" href="stock.html">stock</a>
+                </li>
+            </ul>
+        </div>
+        <!--main-->
+        <div class="col-xs-10 col-xs-offset-2 col-md-10 col-md-offset-2 main">
+            <div class="row-fluid">
+                <div class="area-top clearfix">
+                    <div class="pull-left head">
+                        <h3 class="title">
+                            <!--<i class="icon-dashboard"></i>-->
+                            stock view
+                        </h3>
+                        <h5>
+                            For view stock
+                        </h5>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-12 area-body">
+                    <div class="well">
+                        <ul class="nav nav-pills">
+                            <li><input type="text" class="form-control pull-left" id="stocks" val="" placeholder="请输入代码！使用,分隔"></li>
+                            <li><button class="btn btn-default" id="add">添加</button></li>
+                        </ul>
+                    </div>
+
+
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

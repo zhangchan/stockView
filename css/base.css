@@ -1,0 +1,79 @@
+body {font: 400 12px 'Open Sans',HelveticaNeue,Helvetica,Arial;
+    /*background: url("../images/bg.png");*/
+    min-height: 100%;color: #707070;overflow-x: hidden;}
+.header{border-bottom: 1px solid rgba(10, 13, 14, 0.8);background: #11161A;min-height: 40px;padding-left: 20px;padding-right: 20px;}
+.header .brand {float: left;display: block; text-decoration:none;padding: 10px 20px 10px;margin-left: -20px;font-size: 20px;font-weight: 200;color: #999;text-shadow: 0 1px 0 #eee;}
+.siderbar {
+    padding-top: 50px;padding-left: 0;
+    position: fixed;
+    z-index: -1;
+    /*width: 200px;*/
+    background: #11161A;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-right: 1px solid #CCC;
+}
+.siderbar .nav > li.active > a {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #939EA4;
+}
+.siderbar .nav > li > a:hover {
+    background: #11161A;
+    color: #939EA4;
+}
+.siderbar .nav > li {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+.siderbar .nav > li .glow {
+    background: #4291A6;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 5px;
+    -webkit-transition: box-shadow .3s;
+    -moz-transition: box-shadow .3s;
+    -o-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+    background: #1F2B42;
+    -webkit-box-shadow: 0 0 2px 1px #434D59 inset;
+    -moz-box-shadow: 0 0 2px 1px #434d59 inset;
+    box-shadow: 0 0 2px 1px #434D59 inset;
+}
+.siderbar .nav > li.active .glow,.siderbar .nav > li .glow:hover {
+    position: absolute;
+    background: #4291A6;
+    -webkit-box-shadow: 0 0 2px 1px #7BC8D7 inset;
+    -moz-box-shadow: 0 0 2px 1px #7bc8d7 inset;
+    box-shadow: 0 0 2px 1px #7BC8D7 inset;
+    z-index: 2;
+}
+.siderbar .nav > li > a{
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    color: #6B787F;
+}
+.siderbar .nav > li:hover{
+    background: #11161A;
+}
+
+
+.main{ position: relative; padding-left: 0;padding-right: 0; }
+.area-top{background: #ECECEC;box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.07);
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    width: 100%;
+    padding: 0px 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 15px;}
+.alert{padding: 8px 15px; float: left; margin-left: 10px; display: none;margin-bottom: 0;}
